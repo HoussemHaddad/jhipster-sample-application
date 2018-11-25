@@ -1,0 +1,99 @@
+entity Utilisateur {
+	IDuser Long
+    
+}
+
+entity Formulaire {
+	IDFormulaire Long
+}
+
+// an ignored comment
+/** not an ignored comment */
+entity Question {
+	IDQuestion Long,
+	
+	Titre String
+}
+
+entity TypeQuestion {
+	IDType Long required,
+    NomType String
+}
+
+
+entity Reservation {
+	
+}
+
+
+entity AutresInformations {
+	
+	IDInfo Long,
+	NomInfo String,
+	ContenuInfo String
+	
+}
+
+
+
+entity Role {
+	IDRole Long,
+	NomRole String
+}
+
+entity Commentaire {
+	IDcomm Long,
+	Contenu String
+}
+entity Formation {
+	IDFormation Long,
+	NomFormation String,
+    Information String
+}
+
+entity CentreDeFormation {
+	IDCentre Long,
+	NomCentre String,
+    Adresse String
+}
+
+entity Notification {
+	IDNotif Long
+}
+
+entity TypeDeNotification{
+	IDType Long,
+	NomType String
+}
+
+entity CategorieFormation{
+	IDCategorie Long,
+	NomCategorie String
+    
+}
+
+relationship ManyToMany {
+	Utilisateur{Role(IDRole)} to Role{Utilisateur(IDuser)},
+    Reservation{Question} to Question{Reservation},
+    Formulaire{Question} to Question{Formulaire}
+  
+}
+
+relationship ManyToOne {
+Utilisateur{Utilisateur} to Utilisateur{Utilisateur},
+Commentaire{Utilisateur} to Utilisateur{Commentaire},
+Formulaire{Utilisateur} to Utilisateur{Formulaire},
+Notification{Utilisateur} to Utilisateur{Notification},
+Formulaire{Formation} to Formation{Formulaire},
+Formation{CentreDeFormation} to CentreDeFormation{Formation},
+Formation{CategorieFormation} to CategorieFormation{Formation},
+Reservation{Utilisateur} to Utilisateur{Reservation},
+Reservation{Formation} to Formation{Reservation},
+Notification{Reservation} to Reservation{Notification},
+Notification{TypeDeNotification} to TypeDeNotification{Notification},
+Question{TypeQuestion} to TypeQuestion{Question},
+AutresInformations{Reservation} to Reservation{AutresInformations}
+
+}
+
+
