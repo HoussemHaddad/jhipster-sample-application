@@ -1,0 +1,53 @@
+{
+    "name": "Formation",
+    "fields": [
+        {
+            "fieldName": "iDFormation",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "nomFormation",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "information",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "centreDeFormation",
+            "otherEntityName": "centreDeFormation",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "categorieFormation",
+            "otherEntityName": "categorieFormation",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "formulaire",
+            "otherEntityName": "formulaire",
+            "otherEntityRelationshipName": "formation"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "reservation",
+            "otherEntityName": "reservation",
+            "otherEntityRelationshipName": "formation"
+        }
+    ],
+    "changelogDate": "20181125121329",
+    "entityTableName": "formation",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "jhipsterSampleApplication",
+    "applications": "*",
+    "microserviceName": "jhipsterSampleApplication"
+}

@@ -42,6 +42,38 @@ public class CacheConfiguration {
             cm.createCache(io.github.jhipster.application.domain.User.class.getName(), jcacheConfiguration);
             cm.createCache(io.github.jhipster.application.domain.Authority.class.getName(), jcacheConfiguration);
             cm.createCache(io.github.jhipster.application.domain.User.class.getName() + ".authorities", jcacheConfiguration);
+            cm.createCache(io.github.jhipster.application.domain.Utilisateur.class.getName(), jcacheConfiguration);
+            cm.createCache(io.github.jhipster.application.domain.Utilisateur.class.getName() + ".roles", jcacheConfiguration);
+            cm.createCache(io.github.jhipster.application.domain.Utilisateur.class.getName() + ".utilisateurs", jcacheConfiguration);
+            cm.createCache(io.github.jhipster.application.domain.Utilisateur.class.getName() + ".commentaires", jcacheConfiguration);
+            cm.createCache(io.github.jhipster.application.domain.Utilisateur.class.getName() + ".formulaires", jcacheConfiguration);
+            cm.createCache(io.github.jhipster.application.domain.Utilisateur.class.getName() + ".notifications", jcacheConfiguration);
+            cm.createCache(io.github.jhipster.application.domain.Utilisateur.class.getName() + ".reservations", jcacheConfiguration);
+            cm.createCache(io.github.jhipster.application.domain.Formulaire.class.getName(), jcacheConfiguration);
+            cm.createCache(io.github.jhipster.application.domain.Formulaire.class.getName() + ".questions", jcacheConfiguration);
+            cm.createCache(io.github.jhipster.application.domain.Question.class.getName(), jcacheConfiguration);
+            cm.createCache(io.github.jhipster.application.domain.Question.class.getName() + ".reservations", jcacheConfiguration);
+            cm.createCache(io.github.jhipster.application.domain.Question.class.getName() + ".formulaires", jcacheConfiguration);
+            cm.createCache(io.github.jhipster.application.domain.TypeQuestion.class.getName(), jcacheConfiguration);
+            cm.createCache(io.github.jhipster.application.domain.TypeQuestion.class.getName() + ".questions", jcacheConfiguration);
+            cm.createCache(io.github.jhipster.application.domain.Reservation.class.getName(), jcacheConfiguration);
+            cm.createCache(io.github.jhipster.application.domain.Reservation.class.getName() + ".questions", jcacheConfiguration);
+            cm.createCache(io.github.jhipster.application.domain.Reservation.class.getName() + ".notifications", jcacheConfiguration);
+            cm.createCache(io.github.jhipster.application.domain.Reservation.class.getName() + ".autresInformations", jcacheConfiguration);
+            cm.createCache(io.github.jhipster.application.domain.AutresInformations.class.getName(), jcacheConfiguration);
+            cm.createCache(io.github.jhipster.application.domain.Role.class.getName(), jcacheConfiguration);
+            cm.createCache(io.github.jhipster.application.domain.Role.class.getName() + ".utilisateurs", jcacheConfiguration);
+            cm.createCache(io.github.jhipster.application.domain.Commentaire.class.getName(), jcacheConfiguration);
+            cm.createCache(io.github.jhipster.application.domain.Formation.class.getName(), jcacheConfiguration);
+            cm.createCache(io.github.jhipster.application.domain.Formation.class.getName() + ".formulaires", jcacheConfiguration);
+            cm.createCache(io.github.jhipster.application.domain.Formation.class.getName() + ".reservations", jcacheConfiguration);
+            cm.createCache(io.github.jhipster.application.domain.CentreDeFormation.class.getName(), jcacheConfiguration);
+            cm.createCache(io.github.jhipster.application.domain.CentreDeFormation.class.getName() + ".formations", jcacheConfiguration);
+            cm.createCache(io.github.jhipster.application.domain.Notification.class.getName(), jcacheConfiguration);
+            cm.createCache(io.github.jhipster.application.domain.TypeDeNotification.class.getName(), jcacheConfiguration);
+            cm.createCache(io.github.jhipster.application.domain.TypeDeNotification.class.getName() + ".notifications", jcacheConfiguration);
+            cm.createCache(io.github.jhipster.application.domain.CategorieFormation.class.getName(), jcacheConfiguration);
+            cm.createCache(io.github.jhipster.application.domain.CategorieFormation.class.getName() + ".formations", jcacheConfiguration);
             // jhipster-needle-ehcache-add-entry
         };
     }

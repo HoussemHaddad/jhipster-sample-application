@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+    <!--
+        Added the constraints for entity Formation.
+    -->
+    <changeSet id="20181125121329-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="centre_de_formation_id"
+                                 baseTableName="formation"
+                                 constraintName="fk_formation_centre_de_formation_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="centre_de_formation"/>
+
+        <addForeignKeyConstraint baseColumnNames="categorie_formation_id"
+                                 baseTableName="formation"
+                                 constraintName="fk_formation_categorie_formation_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="categorie_formation"/>
+
+    </changeSet>
+</databaseChangeLog>

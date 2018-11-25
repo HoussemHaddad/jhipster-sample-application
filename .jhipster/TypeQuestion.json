@@ -1,0 +1,34 @@
+{
+    "name": "TypeQuestion",
+    "fields": [
+        {
+            "fieldName": "iDType",
+            "fieldType": "Long",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "nomType",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "question",
+            "otherEntityName": "question",
+            "otherEntityRelationshipName": "typeQuestion"
+        }
+    ],
+    "changelogDate": "20181125121324",
+    "entityTableName": "type_question",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "jhipsterSampleApplication",
+    "applications": "*",
+    "microserviceName": "jhipsterSampleApplication"
+}

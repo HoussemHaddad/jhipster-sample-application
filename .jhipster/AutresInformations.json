@@ -1,0 +1,35 @@
+{
+    "name": "AutresInformations",
+    "fields": [
+        {
+            "fieldName": "iDInfo",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "nomInfo",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "contenuInfo",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "reservation",
+            "otherEntityName": "reservation",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20181125121326",
+    "entityTableName": "autres_informations",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "jhipsterSampleApplication",
+    "applications": "*",
+    "microserviceName": "jhipsterSampleApplication"
+}

@@ -1,0 +1,39 @@
+{
+    "name": "Notification",
+    "fields": [
+        {
+            "fieldName": "iDNotif",
+            "fieldType": "Long"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "utilisateur",
+            "otherEntityName": "utilisateur",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "reservation",
+            "otherEntityName": "reservation",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "typeDeNotification",
+            "otherEntityName": "typeDeNotification",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20181125121331",
+    "entityTableName": "notification",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "jhipsterSampleApplication",
+    "applications": "*",
+    "microserviceName": "jhipsterSampleApplication"
+}

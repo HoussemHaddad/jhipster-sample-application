@@ -1,0 +1,48 @@
+{
+    "name": "Reservation",
+    "fields": [],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "utilisateur",
+            "otherEntityName": "utilisateur",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "formation",
+            "otherEntityName": "formation",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityRelationshipName": "reservation",
+            "relationshipName": "question",
+            "otherEntityName": "question",
+            "otherEntityField": "id",
+            "ownerSide": true
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "notification",
+            "otherEntityName": "notification",
+            "otherEntityRelationshipName": "reservation"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "autresInformations",
+            "otherEntityName": "autresInformations",
+            "otherEntityRelationshipName": "reservation"
+        }
+    ],
+    "changelogDate": "20181125121325",
+    "entityTableName": "reservation",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "jhipsterSampleApplication",
+    "applications": "*",
+    "microserviceName": "jhipsterSampleApplication"
+}
