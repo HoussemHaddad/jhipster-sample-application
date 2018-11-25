@@ -1,0 +1,35 @@
+{
+    "name": "CentreDeFormation",
+    "fields": [
+        {
+            "fieldName": "iDCentre",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "nomCentre",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "adresse",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "formation",
+            "otherEntityName": "formation",
+            "otherEntityRelationshipName": "centreDeFormation"
+        }
+    ],
+    "changelogDate": "20181125121330",
+    "entityTableName": "centre_de_formation",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "jhipsterSampleApplication",
+    "applications": "*",
+    "microserviceName": "jhipsterSampleApplication"
+}

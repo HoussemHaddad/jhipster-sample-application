@@ -1,0 +1,31 @@
+{
+    "name": "CategorieFormation",
+    "fields": [
+        {
+            "fieldName": "iDCategorie",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "nomCategorie",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "formation",
+            "otherEntityName": "formation",
+            "otherEntityRelationshipName": "categorieFormation"
+        }
+    ],
+    "changelogDate": "20181125121333",
+    "entityTableName": "categorie_formation",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "jhipsterSampleApplication",
+    "applications": "*",
+    "microserviceName": "jhipsterSampleApplication"
+}

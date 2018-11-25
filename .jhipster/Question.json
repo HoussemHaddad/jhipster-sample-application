@@ -1,0 +1,46 @@
+{
+    "name": "Question",
+    "fields": [
+        {
+            "fieldName": "iDQuestion",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "titre",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "typeQuestion",
+            "otherEntityName": "typeQuestion",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-many",
+            "relationshipName": "reservation",
+            "otherEntityName": "reservation",
+            "ownerSide": false,
+            "otherEntityRelationshipName": "question"
+        },
+        {
+            "relationshipType": "many-to-many",
+            "relationshipName": "formulaire",
+            "otherEntityName": "formulaire",
+            "ownerSide": false,
+            "otherEntityRelationshipName": "question"
+        }
+    ],
+    "changelogDate": "20181125121323",
+    "javadoc": "not an ignored comment",
+    "entityTableName": "question",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "jhipsterSampleApplication",
+    "applications": "*",
+    "microserviceName": "jhipsterSampleApplication"
+}

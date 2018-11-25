@@ -1,0 +1,32 @@
+{
+    "name": "Role",
+    "fields": [
+        {
+            "fieldName": "iDRole",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "nomRole",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-many",
+            "relationshipName": "utilisateur",
+            "otherEntityName": "utilisateur",
+            "ownerSide": false,
+            "otherEntityRelationshipName": "role"
+        }
+    ],
+    "changelogDate": "20181125121327",
+    "entityTableName": "role",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "jhipsterSampleApplication",
+    "applications": "*",
+    "microserviceName": "jhipsterSampleApplication"
+}

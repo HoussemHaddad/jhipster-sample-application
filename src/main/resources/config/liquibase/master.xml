@@ -5,6 +5,27 @@
     xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
 
     <include file="config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181125121321_added_entity_Utilisateur.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181125121322_added_entity_Formulaire.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181125121323_added_entity_Question.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181125121324_added_entity_TypeQuestion.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181125121325_added_entity_Reservation.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181125121326_added_entity_AutresInformations.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181125121327_added_entity_Role.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181125121328_added_entity_Commentaire.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181125121329_added_entity_Formation.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181125121330_added_entity_CentreDeFormation.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181125121331_added_entity_Notification.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181125121332_added_entity_TypeDeNotification.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181125121333_added_entity_CategorieFormation.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
+    <include file="config/liquibase/changelog/20181125121321_added_entity_constraints_Utilisateur.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181125121322_added_entity_constraints_Formulaire.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181125121323_added_entity_constraints_Question.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181125121325_added_entity_constraints_Reservation.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181125121326_added_entity_constraints_AutresInformations.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181125121328_added_entity_constraints_Commentaire.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181125121329_added_entity_constraints_Formation.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181125121331_added_entity_constraints_Notification.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
 </databaseChangeLog>
